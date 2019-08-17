@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Receptionist_activity">
+<LinearLayout
+    android:id="@+id/rec_buttonLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/rec_attendence"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Scan Attendence"
+        />
+    <Button
+        android:id="@+id/rec_scan_booking"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Scan Booking"
+        />
+
+</LinearLayout>
+    <ListView
+        android:id="@+id/rec_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        />
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/rec_new_Entry"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="66dp"
+    android:layout_marginEnd="16dp"
+    />
+</FrameLayout>

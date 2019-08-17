@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/menu_dateSlot"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Date Of booking-"
+            />
+        <TextView
+            android:id="@+id/menu_dateEV"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Select A Date"
+            android:textStyle="italic"
+            />
+        <ImageView
+            android:id="@+id/menu_choose_date"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_today_black_24dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/menu_ll"
+        android:layout_below="@id/menu_dateSlot"
+        android:visibility="gone"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Time slots-"
+        />
+    <Spinner
+        android:id="@+id/menu_time_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </Spinner>
+</LinearLayout>
+
+    <TextView
+        android:layout_below="@id/menu_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="Tables Available at selected Date and Time"
+        android:layout_centerHorizontal="true"
+    android:id="@+id/menu_tv"
+        />
+    <LinearLayout
+        android:layout_below="@id/menu_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/menuBtnGroup"
+        android:background="#008FFF"
+
+        ><LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="#7FF7FF"
+            android:layout_margin="3dp"
+            />
+        <Button
+
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_margin="3dp"
+
+            android:background="#7FF7FF"
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_margin="3dp"
+            android:background="#7FF7FF"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4"
+
+                android:layout_margin="3dp"
+                android:background="#7FF7FF"
+                />
+            <Button
+
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="5"
+
+                android:layout_margin="3dp"
+                android:background="#7FF7FF"
+                />
+            <Button
+
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="6"
+
+                android:layout_margin="3dp"
+                android:background="#7FF7FF"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="7"
+
+                android:layout_margin="3dp"
+                android:background="#7FF7FF"
+                />
+            <Button
+
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="8"
+
+                android:layout_margin="3dp"
+                android:background="#7FF7FF"
+                />
+            <Button
+
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:background="#7FF7FF"
+                android:layout_margin="3dp"
+                />
+        </LinearLayout></LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_nopLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/menuBtnGroup"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Number of People-"
+            />
+        <EditText
+            android:id="@+id/menu_people"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/menu_totAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_nopLL"
+        android:textSize="20sp"
+        android:text="Your Bill is-"
+        />
+</RelativeLayout>

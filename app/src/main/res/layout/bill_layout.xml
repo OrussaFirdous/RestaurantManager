@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/bill_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Food item"
+        />
+    <TextView
+        android:id="@+id/bill_food_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Price"
+            />
+        <TextView
+            android:id="@+id/bill_price_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/bill_emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/bill_box"
+        android:background="#000"
+        />
+    <LinearLayout
+        android:id="@+id/bill_total_LL"
+        android:layout_below="@id/bill_emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Total Amount-"
+            />
+        <TextView
+            android:id="@+id/bill_tot_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bill_table_sel_LL"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/bill_total_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Table Selected-"
+            />
+        <TextView
+            android:id="@+id/bill_table_sel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/bill_qrCode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bill_table_sel_LL"
+        />
+    <TextView
+        android:id="@+id/bill_info"
+        android:layout_below="@id/bill_qrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show the screenshot to the Receptionist"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_below="@id/bill_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Fooding"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+
+        />
+
+</RelativeLayout>
